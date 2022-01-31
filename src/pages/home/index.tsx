@@ -72,7 +72,7 @@ const Home = () => {
       fetchData()
     }
 
-    if (value[0] === null && value[1] === null && filteredObj.length <= 0) {
+    if (!value[0] && !value[1] && filteredObj.length <= 0) {
       setFilteredObj(listBank)
     }
   }, [value])
